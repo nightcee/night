@@ -5,6 +5,8 @@ echo "unzip installed"
 echo "Fetching latest Hemis version"
 wget --quiet https://github.com/Hemis-Blockchain/Hemis/releases/latest/download/Hemis-Linux.zip && sudo unzip Hemis-Linux.zip -d /usr/local/bin
 wget --quiet https://github.com/Hemis-Blockchain/Hemis/releases/download/1.1.6/Hemis-params.zip && unzip Hemis-params.zip -d ~/.Hemis-params
+echo "Hemis succesfully installed"
+mkdir -p ~/.Hemis
 echo "Cleanup excess files"
 rm Hemis-Linux.zip && rm Hemis-params.zip
 Hemisd || true
